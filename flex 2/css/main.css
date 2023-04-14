@@ -1,0 +1,59 @@
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container>* {
+    border: 1px solid #000;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    background-color: hsl(90, 45%, 80%);
+    margin: .5em;
+    padding: 1em;
+}
+
+header {
+    flex-basis: 100%;
+}
+
+main {
+    flex-basis: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+main article {
+    margin: .5em 0;
+    flex-basis: 32%;
+
+}
+
+main article:nth-of-type(4),
+main article:nth-of-type(5) {
+    flex-basis: 97%
+}
+
+main article:nth-of-type(5) {
+    order: 2;
+}
+
+aside {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    flex-basis: 100%
+}
